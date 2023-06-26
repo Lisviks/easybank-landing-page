@@ -19,21 +19,23 @@ export default function Header() {
         <Image src={isOpen ? CloseIcon : HamburgerIcon} alt='menu toggle' />
       </div>
       <nav className={isOpen ? 'open' : ''}>
-        <li>
-          <Link href='#'>Home</Link>
-        </li>
-        <li>
-          <Link href='#'>About</Link>
-        </li>
-        <li>
-          <Link href='#'>Contact</Link>
-        </li>
-        <li>
-          <Link href='#'>Blog</Link>
-        </li>
-        <li>
-          <Link href='#'>Careers</Link>
-        </li>
+        <ul>
+          <li>
+            <Link href='#'>Home</Link>
+          </li>
+          <li>
+            <Link href='#'>About</Link>
+          </li>
+          <li>
+            <Link href='#'>Contact</Link>
+          </li>
+          <li>
+            <Link href='#'>Blog</Link>
+          </li>
+          <li>
+            <Link href='#'>Careers</Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );

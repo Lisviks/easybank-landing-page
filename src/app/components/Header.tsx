@@ -4,11 +4,19 @@ import Image from 'next/image';
 import Logo from '../../../public/images/logo.svg';
 import HamburgerIcon from '../../../public/images/icon-hamburger.svg';
 import CloseIcon from '../../../public/images/icon-close.svg';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [isOpen]);
 
   return (
     <header>

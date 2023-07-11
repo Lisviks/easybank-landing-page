@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Logo from '../../../public/images/logo.svg';
+import Logo from '../../../public/images/logo-light.svg';
 import FacebookLogo from '../../../public/images/icon-facebook.svg';
 import YoutubeLogo from '../../../public/images/icon-youtube.svg';
 import TwitterLogo from '../../../public/images/icon-twitter.svg';

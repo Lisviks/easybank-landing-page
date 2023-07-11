@@ -234,3 +234,77 @@ nav {
     }
   }
 }
+
+footer {
+  margin-top: 5.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  background-color: #2d314d;
+
+  .socials {
+    .logo {
+      width: 8.6875rem;
+      margin: 0 auto;
+    }
+
+    ul {
+      list-style: none;
+      width: 11.55rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2rem auto;
+
+      li {
+        width: 1.5rem;
+      }
+    }
+  }
+
+  .links {
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          font-size: 0.9375rem;
+          line-height: 1.625rem;
+          letter-spacing: -0.01463rem;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .invite {
+    margin-top: 2rem;
+
+    button {
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 1.75rem;
+      color: #fff;
+      width: 10.1875rem;
+      height: 2.75rem;
+      border: none;
+      border-radius: 1.375rem;
+      background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 100%);
+    }
+
+    p {
+      margin-top: 1.5rem;
+      font-size: 0.9375rem;
+      line-height: 1.625rem;
+      letter-spacing: -0.01463rem;
+      color: #fff;
+      opacity: 0.5;
+    }
+  }
+}

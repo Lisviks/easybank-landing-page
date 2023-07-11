@@ -33,6 +33,10 @@ header {
       cursor: pointer;
     }
   }
+
+  button {
+    display: none;
+  }
 }
 
 nav {
@@ -305,6 +309,57 @@ footer {
       letter-spacing: -0.01463rem;
       color: #fff;
       opacity: 0.5;
+    }
+  }
+}
+
+@media (min-width: 1110px) {
+  header {
+    max-width: 1110px;
+    margin: 1.13rem auto;
+
+    .menu-toggle {
+      display: none;
+    }
+
+    button {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 1.75rem;
+      color: #fff;
+      width: 10.1875rem;
+      height: 2.75rem;
+      border: none;
+      border-radius: 1.375rem;
+      background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 100%);
+    }
+  }
+
+  nav {
+    display: block;
+    position: unset;
+    background: unset;
+    padding: 0;
+    width: 20.7rem;
+
+    ul {
+      background-color: unset;
+      border-radius: unset;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        font-size: 0.875rem;
+        letter-spacing: -0.00675rem;
+        margin-bottom: 0;
+
+        a {
+          text-decoration: none;
+          color: #2d314d;
+        }
+      }
     }
   }
 }

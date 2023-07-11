@@ -45,6 +45,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <button>Request Invite</button>
     </header>
   );
 }

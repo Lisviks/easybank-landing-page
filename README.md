@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [URL]()
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/easybank-landing-page-p5jLdGFLSU)
 - Live Site URL: [URL](https://easybank-landing-page-eight-khaki.vercel.app/)
 
 ## My process

@@ -20,32 +20,34 @@ export default function Header() {
 
   return (
     <header>
-      <div className='logo'>
-        <Image src={Logo} alt='Easybank' />
+      <div className='content'>
+        <div className='logo'>
+          <Image src={Logo} alt='Easybank' />
+        </div>
+        <div className='menu-toggle' onClick={() => setIsOpen(!isOpen)}>
+          <Image src={isOpen ? CloseIcon : HamburgerIcon} alt='menu toggle' />
+        </div>
+        <nav className={isOpen ? 'open' : ''}>
+          <ul>
+            <li>
+              <Link href='#'>Home</Link>
+            </li>
+            <li>
+              <Link href='#'>About</Link>
+            </li>
+            <li>
+              <Link href='#'>Contact</Link>
+            </li>
+            <li>
+              <Link href='#'>Blog</Link>
+            </li>
+            <li>
+              <Link href='#'>Careers</Link>
+            </li>
+          </ul>
+        </nav>
+        <button>Request Invite</button>
       </div>
-      <div className='menu-toggle' onClick={() => setIsOpen(!isOpen)}>
-        <Image src={isOpen ? CloseIcon : HamburgerIcon} alt='menu toggle' />
-      </div>
-      <nav className={isOpen ? 'open' : ''}>
-        <ul>
-          <li>
-            <Link href='#'>Home</Link>
-          </li>
-          <li>
-            <Link href='#'>About</Link>
-          </li>
-          <li>
-            <Link href='#'>Contact</Link>
-          </li>
-          <li>
-            <Link href='#'>Blog</Link>
-          </li>
-          <li>
-            <Link href='#'>Careers</Link>
-          </li>
-        </ul>
-      </nav>
-      <button>Request Invite</button>
     </header>
   );
 }

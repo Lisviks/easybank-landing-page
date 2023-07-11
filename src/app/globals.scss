@@ -23,19 +23,22 @@ img {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1.375rem 1.5rem;
+  padding: 1.375rem 1.5rem;
 
-  .menu-toggle {
-    &:hover {
-      cursor: pointer;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu-toggle {
+      &:hover {
+        cursor: pointer;
+      }
     }
-  }
 
-  button {
-    display: none;
+    button {
+      display: none;
+    }
   }
 }
 
@@ -102,7 +105,7 @@ nav {
     top: -4.8rem;
   }
 
-  .content {
+  .text {
     margin: 20.12rem 1.5rem 0;
 
     h1 {
@@ -315,24 +318,31 @@ footer {
 
 @media (min-width: 1110px) {
   header {
-    max-width: 1110px;
-    margin: 1.13rem auto;
+    padding: 1.13rem 0;
+    background-color: #fff;
+    z-index: 5;
+    position: relative;
 
-    .menu-toggle {
-      display: none;
-    }
+    .content {
+      max-width: 1110px;
+      margin: 0 auto;
 
-    button {
-      display: block;
-      font-size: 0.875rem;
-      font-weight: 700;
-      line-height: 1.75rem;
-      color: #fff;
-      width: 10.1875rem;
-      height: 2.75rem;
-      border: none;
-      border-radius: 1.375rem;
-      background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 100%);
+      .menu-toggle {
+        display: none;
+      }
+
+      button {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        color: #fff;
+        width: 10.1875rem;
+        height: 2.75rem;
+        border: none;
+        border-radius: 1.375rem;
+        background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 100%);
+      }
     }
   }
 
@@ -359,6 +369,58 @@ footer {
           text-decoration: none;
           color: #2d314d;
         }
+      }
+    }
+  }
+
+  .hero {
+    text-align: left;
+    padding: 10.63rem 0;
+    overflow: visible;
+
+    .content {
+      max-width: 1110px;
+      margin: 0 auto;
+    }
+
+    .image {
+      width: 45.75rem;
+      height: 56.3125rem;
+      position: absolute;
+      top: -7.63rem;
+      left: 56%;
+      transform: translateX(0);
+      z-index: 1;
+    }
+
+    .bg-intro {
+      position: absolute;
+      width: 85.6875rem;
+      height: 59.75rem;
+      top: -18.25rem;
+      left: 40%;
+      overflow: hidden;
+    }
+
+    .text {
+      margin: 0;
+      width: 27.9375rem;
+
+      h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        letter-spacing: -0.0625rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        letter-spacing: -0.01756rem;
+        margin-top: 1.5rem;
+      }
+
+      button {
+        margin-top: 2.25rem;
       }
     }
   }

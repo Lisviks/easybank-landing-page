@@ -22,6 +22,23 @@ img {
   height: auto;
 }
 
+button {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: #fff;
+  width: 10.1875rem;
+  height: 2.75rem;
+  border: none;
+  border-radius: 1.375rem;
+  background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 100%);
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.4;
+  }
+}
+
 header {
   padding: 1.375rem 1.5rem;
 
@@ -66,6 +83,21 @@ nav {
       letter-spacing: -0.00863rem;
       margin-bottom: 1.5rem;
 
+      &:hover a {
+        color: #2d314d;
+        position: relative;
+        transition: color 0.2s ease;
+
+        &::before {
+          content: '';
+          width: 100%;
+          height: 0.25rem;
+          background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 100%);
+          position: absolute;
+          bottom: -2rem;
+        }
+      }
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -73,6 +105,12 @@ nav {
       a {
         text-decoration: none;
         color: #2d314d;
+
+        &::before {
+          content: '';
+          width: 0;
+          transition: width 0.2s ease;
+        }
       }
     }
   }
@@ -124,15 +162,6 @@ nav {
     }
 
     button {
-      width: 10.1875rem;
-      height: 2.75rem;
-      border: none;
-      border-radius: 22px;
-      background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 100%);
-      font-size: 0.875rem;
-      font-weight: 700;
-      line-height: 1.75rem;
-      color: #fff;
       margin-top: 2rem;
     }
   }
@@ -218,6 +247,11 @@ nav {
       line-height: 1.25rem;
       letter-spacing: -0.01788rem;
       margin-top: 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+        color: #30c88f;
+      }
     }
 
     p {
@@ -268,6 +302,10 @@ footer {
 
         li {
           width: 1.5rem;
+
+          &:hover svg path {
+            fill: #30c88f;
+          }
         }
       }
     }
@@ -289,6 +327,10 @@ footer {
             letter-spacing: -0.01463rem;
             color: #fff;
             text-decoration: none;
+
+            &:hover {
+              color: #30c88f;
+            }
           }
         }
       }
@@ -296,18 +338,6 @@ footer {
 
     .invite {
       margin-top: 2rem;
-
-      button {
-        font-size: 0.875rem;
-        font-weight: 700;
-        line-height: 1.75rem;
-        color: #fff;
-        width: 10.1875rem;
-        height: 2.75rem;
-        border: none;
-        border-radius: 1.375rem;
-        background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 100%);
-      }
 
       p {
         margin-top: 1.5rem;
@@ -338,15 +368,6 @@ footer {
 
       button {
         display: block;
-        font-size: 0.875rem;
-        font-weight: 700;
-        line-height: 1.75rem;
-        color: #fff;
-        width: 10.1875rem;
-        height: 2.75rem;
-        border: none;
-        border-radius: 1.375rem;
-        background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 100%);
       }
     }
   }
@@ -372,7 +393,7 @@ footer {
 
         a {
           text-decoration: none;
-          color: #2d314d;
+          color: #9597a5;
         }
       }
     }

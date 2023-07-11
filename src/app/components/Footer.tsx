@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Logo from '../../../public/images/logo-light.svg';
-import FacebookLogo from '../../../public/images/icon-facebook.svg';
-import YoutubeLogo from '../../../public/images/icon-youtube.svg';
-import TwitterLogo from '../../../public/images/icon-twitter.svg';
-import PinterestLogo from '../../../public/images/icon-pinterest.svg';
-import InstagramLogo from '../../../public/images/icon-instagram.svg';
+import FacebookIcon from './socials-svgs/FacebookIcon';
+import YoutubeIcon from './socials-svgs/YoutubeIcon';
+import TwitterIcon from './socials-svgs/TwitterIcon';
+import PinterestIcon from './socials-svgs/PinterestIcon';
+import InstagramIcon from './socials-svgs/InstagramIcon';
 
 export default function Footer() {
   return (
@@ -17,27 +17,27 @@ export default function Footer() {
           <ul>
             <li>
               <a href='#'>
-                <Image src={FacebookLogo} alt='Facebook' />
+                <FacebookIcon />
               </a>
             </li>
             <li>
               <a href='#'>
-                <Image src={YoutubeLogo} alt='Youtube' />
+                <YoutubeIcon />
               </a>
             </li>
             <li>
               <a href='#'>
-                <Image src={TwitterLogo} alt='Twitter' />
+                <TwitterIcon />
               </a>
             </li>
             <li>
               <a href='#'>
-                <Image src={PinterestLogo} alt='Pinterest' />
+                <PinterestIcon />
               </a>
             </li>
             <li>
               <a href='#'>
-                <Image src={InstagramLogo} alt='Instagram' />
+                <InstagramIcon />
               </a>
             </li>
           </ul>

@@ -129,7 +129,8 @@ nav {
   }
 }
 
-.section-1 {
+.section-1,
+.section-2 {
   margin-top: 5.5rem;
   padding: 4rem 1.5rem;
   background-color: #f4f5f7;
@@ -164,7 +165,7 @@ nav {
     font-weight: 400;
     line-height: 1.5625rem;
     letter-spacing: -0.01463rem;
-    color: #959595;
+    color: #9597a5;
     margin-top: 1rem;
   }
 
@@ -172,5 +173,64 @@ nav {
     height: 4.5rem;
     width: 4.5rem;
     margin: 0 auto 1.5rem;
+  }
+}
+
+.section-2 {
+  margin-top: 0;
+  background-color: #fafafa;
+  text-align: left;
+  padding: 5.5rem 1.5rem 7rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  .image {
+    width: 20.4375rem;
+    height: 12.5rem;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .author {
+    font-size: 0.625rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.00975rem;
+    color: #9597a5;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.01788rem;
+    margin-top: 0.5rem;
+  }
+
+  p {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.01269rem;
+    margin-top: 0.5rem;
+  }
+
+  .card {
+    margin: 3rem auto 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.3125rem;
+    overflow: hidden;
+
+    .content {
+      padding: 1.56rem 1.85rem;
+    }
+
+    &:first-child {
+      margin-top: 1.94rem;
+      margin-bottom: 0;
+    }
   }
 }
